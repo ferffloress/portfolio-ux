@@ -1,0 +1,285 @@
+body {
+    background-color: #191a1d;
+    color: rgb(255, 255, 255);
+    font-family: 'Gordita', sans-serif;                       
+}
+
+.navbar-brand, .nav-link {
+    font-family: 'Gordita', sans-serif;
+}
+
+.nav-link {
+    color:rgba(255, 255, 255, 0.68);
+}
+
+.navbar-brand {
+    font-size: 16px;
+    color:rgba(255, 255, 255);
+}
+
+/* index */
+
+#hola {
+    color: violet;
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+.portada, .proyectos {
+    margin: 15%;
+    text-align: center;
+}
+
+@media (max-width: 639px) {
+  #hola {
+padding-top: 100px;
+  }
+}
+
+.portada button {
+    margin-top: 30px;
+    padding: 15px 20px;
+}
+
+.portada h2 {
+    text-align: left;
+}
+
+.proyectos {
+    margin-top: 22%;
+    text-align: center;
+}
+
+.proyectos a {
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    color:rgba(255, 255, 255);
+}
+
+
+@media (min-width: 640px) {
+    h1, h2, .proyectos a {
+        font-size: 43px;
+    }
+    
+}
+
+/* pág. Dale Chance */
+
+.seccion1, .seccion2 {
+    margin-bottom: 30px;
+}
+
+.detalle-proyecto h1 {
+    margin-top: 32%;
+    margin-bottom: 15%;
+    color: rgba(156, 152, 152, 0.4);
+    font-size: 50px;
+    font-family: 'Circular Std', sans-serif;
+    font-weight: 550;
+    text-align: center;
+}
+
+@media (min-width: 640px){
+ 
+    .detalle-proyecto h1 {
+        color: rgb(56, 56, 56);
+        font-size: 160px;
+        margin-top: 13%;
+        margin-left: 15%;
+        margin-right: 15%;
+        letter-spacing: -3px;
+        line-height: 0.9;
+       
+    }
+}
+
+.detalle-proyecto p, .link-trabajo, .link-home, h5 {
+    font-weight: 400;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.detalle-proyecto p, .link-trabajo, .link-home, .detalle-proyecto li {
+    color: rgb(196, 196, 196);
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h4, h5 {
+    letter-spacing: 2px;
+    font-size: 10px;
+    line-height: 30px;
+}
+
+@media (max-width: 639px) {
+    .proyectos {
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 640px){
+    
+    .detalle-proyecto p, .link-trabajo, .link-home, .detalle-proyecto li {
+        font-size: 16px;
+    }
+
+    .div-link {
+      display: block;
+      margin-top: 60px;
+    }
+
+    h4, h5 {
+        font-size: 12px;
+    }
+
+    .secciones-columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 42px;
+    grid-row-gap: 0px;
+    }
+    
+    .seccion2 {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 270px;
+    }
+    .seccion1 {
+        grid-area: 1 / 2 / 2 / 4;
+        margin-left: 20px;
+        margin-right: 270px;
+    }
+}
+
+
+.seccion3 {
+    padding-top: 60px;
+    text-align: center;
+}
+
+
+h6 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-bottom: 28px;
+}
+
+@media (min-width: 640px){
+    .seccion3 {
+        margin: 10% 25% 7%;
+    }
+
+    h6 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+}
+
+
+.img-app {
+    border-radius: 10px;
+    width: 100vw;
+    height: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+@media (max-width: 639px) {
+.grun-1, .grun-2, .area-1, .area-2, .alex-1, .alex-2 {
+    width: 100vw;
+    height: auto;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+}
+
+.link-trabajo, .link-home {
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.div-link {
+    text-align: center;
+}
+
+@media (min-width: 640px){
+.img-app {
+    max-width: 60%;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.imagenes {
+    text-align: center;
+}
+}
+
+@media (min-width: 640px){
+    .grid-cel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 5%;
+        }
+        
+        .grun-1 { grid-area: 1 / 1 / 2 / 2; }
+        .area-1 { grid-area: 1 / 2 / 2 / 3; }
+        .alex-1 { grid-area: 1 / 3 / 2 / 4; }
+        .grun-2 { grid-area: 2 / 1 / 3 / 2; }
+        .area-2 { grid-area: 2 / 2 / 3 / 3; }
+        .alex-2 { grid-area: 2 / 3 / 3 / 4; }
+    
+        .grun-1, .grun-2, .area-1, .area-2, .alex-1, .alex-2 {
+            max-width: 380px;
+            height: auto;
+            margin: auto;
+        }
+}
+
+/* acerca de mí */
+.conoceme {
+    margin-top: 5%;
+}
+.formacion li {
+    margin-bottom: 12px;
+    margin-left: -1em;
+    list-style-type: none;
+}
+
+#about {
+    margin-top: 12%;
+    text-align: center;
+}
+
+.btn-contacto {
+    margin-top: 3%;
+    text-align: center;
+}
+
+@media (max-width: 639px) {
+    #about {
+        margin-bottom: 20%;
+        margin-top: 50%;
+    }
+
+    .btn-contacto {
+        margin-bottom: 6%;
+        margin-top: 15%;
+    }
+}
+
+.d-grid .btn {
+padding-bottom: 20px;
+padding-top: 20px;
+}
